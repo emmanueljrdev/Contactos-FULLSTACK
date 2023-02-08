@@ -11,7 +11,7 @@ const createNav = () => {
     nav.classList.add('bg-zinc-50', 'dark:bg-slate-800', 'h-20', 'fixed', 'top-0', 'left-0', 'right-0');
     nav.innerHTML = `
     <div class="flex justify-between items-center h-full px-4">
-    <h1 class="text-zinc-700 dark:text-white text-xl uppercase font-bold"><a href="/home/">Contact App</a></h1>
+    <h1 class="text-zinc-700 dark:text-white text-xl uppercase font-bold"><a href="/">Contact App</a></h1>
 
     <!-- Desktop layout -->
     <div class=" hidden md:flex gap-4 p-4">
@@ -57,7 +57,7 @@ const createNavSignup = () => {
     nav.classList.add('bg-zinc-50', 'dark:bg-slate-800', 'h-20', 'fixed', 'top-0', 'left-0', 'right-0');
     nav.innerHTML = `
     <div class="flex justify-between items-center h-full px-4">
-    <h1 class="text-zinc-700 dark:text-white text-xl uppercase font-bold"><a href="/home/">Contact App</a></h1>
+    <h1 class="text-zinc-700 dark:text-white text-xl uppercase font-bold"><a href="/">Contact App</a></h1>
 
     <!-- Desktop layout -->
     <div class=" hidden md:flex gap-4 p-4">
@@ -101,7 +101,7 @@ const createNavLogin = () => {
     nav.classList.add('bg-zinc-50', 'dark:bg-slate-800', 'h-20', 'fixed', 'top-0', 'left-0', 'right-0');
     nav.innerHTML = `
     <div class="flex justify-between items-center h-full px-4">
-    <h1 class="text-zinc-700 dark:text-white text-xl uppercase font-bold"><a href="/home/">Contact App</a></h1>
+    <h1 class="text-zinc-700 dark:text-white text-xl uppercase font-bold"><a href="/">Contact App</a></h1>
 
     <!-- Desktop layout -->
     <div class=" hidden md:flex gap-4 p-4">
@@ -145,7 +145,7 @@ const createNavApp = () => {
     nav.classList.add('bg-zinc-50', 'dark:bg-slate-800', 'h-20', 'fixed', 'top-0', 'left-0', 'right-0');
     nav.innerHTML = `
     <div class="flex justify-between items-center h-full px-4">
-    <h1 class="text-zinc-700 dark:text-white text-xl uppercase font-bold"><a href="/home/">Contact App</a></h1>
+    <h1 class="text-zinc-700 dark:text-white text-xl uppercase font-bold"><a href="/">Contact App</a></h1>
 
     <!-- Desktop layout -->
     <div class=" hidden md:flex gap-4 p-4">
