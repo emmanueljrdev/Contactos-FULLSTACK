@@ -7,28 +7,28 @@ const body = document.querySelector('body')
 const createNav = () => {
     const nav = document.createElement('nav');
     nav.id = 'nav-bar';
-    nav.classList.add('bg-zinc-50', 'bg-slate-800', 'h-20', 'fixed', 'top-0', 'left-0', 'right-0');
+    nav.classList.add('bg-slate-800', 'h-20', 'fixed', 'top-0', 'left-0', 'right-0', 'shadow-md');
     nav.innerHTML = `
     <div class="flex justify-between items-center h-full px-4">
-    <h1 class="text-zinc-700 text-white text-xl uppercase font-bold"><a href="/">Contact App</a></h1>
+    <h1 class="text-white text-xl uppercase font-bold"><a href="/">Contact App</a></h1>
 
     <!-- Desktop layout -->
     <div class=" hidden md:flex gap-4 p-4">
-        <a href="/signup/" class="hover:bg-slate-100 hover:bg-slate-700 rounded-lg p-2 font-semibold text-white text-zinc-700 easy-in duration-300">Registro</a>
-        <a href="/login/" class="hover:bg-slate-100 hover:bg-slate-700 rounded-lg p-2 font-semibold text-white text-zinc-700 easy-in duration-300">Login</a>
+        <a href="/signup/" class="hover:bg-slate-100 hover:bg-slate-700 rounded-lg p-2 font-semibold text-white  easy-in duration-300">Registro</a>
+        <a href="/login/" class="hover:bg-slate-100 hover:bg-slate-700 rounded-lg p-2 font-semibold text-white  easy-in duration-300">Login</a>
     </div>
 
     <!-- Mobile layout -->
     <!-- Btn mobile -->
-    <svg id="nav-btn" class="md:hidden text-zinc-700 w-8 h-8 text-white cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+    <svg id="nav-btn" class="md:hidden w-8 h-8 text-white cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
     
       <!-- Sidebar mobile -->
       <div id="nav-sidebar" class="md:hidden fixed top-20 w-[0%] -right-8 bottom-0 bg-zinc-500/70 bg-slate-900/60 backdrop-blur-sm easy-in duration-500">
         <div class="absolute bg-zinc-100 w-[60%] right-0 bg-slate-700 top-0 bottom-0 flex flex-col gap-4 p-4">
-            <a href="/signup/" class="hover:bg-slate-200 hover:bg-slate-600 rounded-lg p-2 font-semibold text-white text-zinc-700 easy-in duration-300">Registro</a>
-            <a href="/login/" class="hover:bg-slate-200 hover:bg-slate-600 rounded-lg p-2 font-semibold text-white text-zinc-700 easy-in duration-300">Login</a>
+            <a href="/signup/" class="hover:bg-slate-200 hover:bg-slate-600 rounded-lg p-2 font-semibold text-white  easy-in duration-300">Registro</a>
+            <a href="/login/" class="hover:bg-slate-200 hover:bg-slate-600 rounded-lg p-2 font-semibold text-white  easy-in duration-300">Login</a>
 
         </div>
       </div>
@@ -53,26 +53,26 @@ const createNav = () => {
 const createNavSignup = () => {
     const nav = document.createElement('nav');
     nav.id = 'nav-bar';
-    nav.classList.add('bg-zinc-50', 'bg-slate-800', 'h-20', 'fixed', 'top-0', 'left-0', 'right-0');
+    nav.classList.add('bg-slate-800', 'h-20', 'fixed', 'top-0', 'left-0', 'right-0', 'shadow-md');
     nav.innerHTML = `
     <div class="flex justify-between items-center h-full px-4">
-    <h1 class="text-zinc-700 text-white text-xl uppercase font-bold"><a href="/">Contact App</a></h1>
+    <h1 class=" text-white text-xl uppercase font-bold"><a href="/">Contact App</a></h1>
 
     <!-- Desktop layout -->
     <div class=" hidden md:flex gap-4 p-4">
-        <a href="/login/" class="hover:bg-slate-100 hover:bg-slate-700 rounded-lg p-2 font-semibold text-white text-zinc-700 easy-in duration-300">Login</a>
+        <a href="/login/" class="hover:bg-slate-100 hover:bg-slate-700 rounded-lg p-2 font-semibold text-white  easy-in duration-300">Login</a>
     </div>
 
     <!-- Mobile layout -->
     <!-- Btn mobile -->
-    <svg id="nav-btn" class="md:hidden text-zinc-700 w-8 h-8 text-white cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+    <svg id="nav-btn" class="md:hidden  w-8 h-8 text-white cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
     
       <!-- Sidebar mobile -->
       <div id="nav-sidebar" class="md:hidden fixed top-20 w-[0%] -right-8 bottom-0 bg-zinc-500/70 bg-slate-900/60 backdrop-blur-sm easy-in duration-500">
         <div class="absolute bg-zinc-100 w-[60%] right-0 bg-slate-700 top-0 bottom-0 flex flex-col gap-4 p-4">
-            <a href="/login/" class="hover:bg-slate-200 hover:bg-slate-600 rounded-lg p-2 font-semibold text-white text-zinc-700 easy-in duration-300">Login</a>
+            <a href="/login/" class="hover:bg-slate-200 hover:bg-slate-600 rounded-lg p-2 font-semibold text-white  easy-in duration-300">Login</a>
 
         </div>
       </div>
@@ -97,26 +97,26 @@ const createNavSignup = () => {
 const createNavLogin = () => {
     const nav = document.createElement('nav');
     nav.id = 'nav-bar';
-    nav.classList.add('bg-zinc-50', 'bg-slate-800', 'h-20', 'fixed', 'top-0', 'left-0', 'right-0');
+    nav.classList.add('bg-slate-800', 'h-20', 'fixed', 'top-0', 'left-0', 'right-0', 'shadow-md');
     nav.innerHTML = `
     <div class="flex justify-between items-center h-full px-4">
-    <h1 class="text-zinc-700 text-white text-xl uppercase font-bold"><a href="/">Contact App</a></h1>
+    <h1 class=" text-white text-xl uppercase font-bold"><a href="/">Contact App</a></h1>
 
     <!-- Desktop layout -->
     <div class=" hidden md:flex gap-4 p-4">
-        <a href="/signup/" class="hover:bg-slate-100 hover:bg-slate-700 rounded-lg p-2 font-semibold text-white text-zinc-700 easy-in duration-300">Registro</a>
+        <a href="/signup/" class="hover:bg-slate-100 hover:bg-slate-700 rounded-lg p-2 font-semibold text-white  easy-in duration-300">Registro</a>
     </div>
 
     <!-- Mobile layout -->
     <!-- Btn mobile -->
-    <svg id="nav-btn" class="md:hidden text-zinc-700 w-8 h-8 text-white cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+    <svg id="nav-btn" class="md:hidden  w-8 h-8 text-white cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
     
       <!-- Sidebar mobile -->
       <div id="nav-sidebar" class="md:hidden fixed top-20 w-[0%] -right-8 bottom-0 bg-zinc-500/70 bg-slate-900/60 backdrop-blur-sm easy-in duration-500">
         <div class="absolute bg-zinc-100 w-[60%] right-0 bg-slate-700 top-0 bottom-0 flex flex-col gap-4 p-4">
-            <a href="/signup/" class="hover:bg-slate-200 hover:bg-slate-600 rounded-lg p-2 font-semibold text-white text-zinc-700 easy-in duration-300">Registro</a>
+            <a href="/signup/" class="hover:bg-slate-200 hover:bg-slate-600 rounded-lg p-2 font-semibold text-white  easy-in duration-300">Registro</a>
 
         </div>
       </div>
@@ -141,26 +141,26 @@ const createNavLogin = () => {
 const createNavApp = () => {
     const nav = document.createElement('nav');
     nav.id = 'nav-bar';
-    nav.classList.add('bg-zinc-50', 'bg-slate-800', 'h-20', 'fixed', 'top-0', 'left-0', 'right-0');
+    nav.classList.add('bg-slate-800', 'h-20', 'fixed', 'top-0', 'left-0', 'right-0', 'shadow-md');
     nav.innerHTML = `
     <div class="flex justify-between items-center h-full px-4">
-    <h1 class="text-zinc-700 text-white text-xl uppercase font-bold"><a href="/">Contact App</a></h1>
+    <h1 class=" text-white text-xl uppercase font-bold"><a href="/">Contact App</a></h1>
 
     <!-- Desktop layout -->
     <div class=" hidden md:flex gap-4 p-4">
-        <button class="hover:bg-slate-100 hover:bg-slate-700 rounded-lg p-2 font-semibold text-white text-zinc-700 easy-in duration-300">Log Out</button>
+        <button class="hover:bg-slate-100 hover:bg-slate-700 rounded-lg p-2 font-semibold text-white  easy-in duration-300">Log Out</button>
     </div>
 
     <!-- Mobile layout -->
     <!-- Btn mobile -->
-    <svg id="nav-btn" class="md:hidden text-zinc-700 w-8 h-8 text-white cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+    <svg id="nav-btn" class="md:hidden  w-8 h-8 text-white cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
     
       <!-- Sidebar mobile -->
       <div id="nav-sidebar" class="md:hidden fixed top-20 w-[0%] -right-8 bottom-0 bg-zinc-500/70 bg-slate-900/60 backdrop-blur-sm easy-in duration-500">
         <div class="absolute bg-zinc-100 w-[60%] right-0 bg-slate-700 top-0 bottom-0 flex flex-col gap-4 p-4">
-            <button class="hover:bg-slate-200 hover:bg-slate-600 rounded-lg p-2 font-semibold text-white text-zinc-700 easy-in duration-300">Log Out<button>
+            <button class="hover:bg-slate-200 hover:bg-slate-600 rounded-lg p-2 font-semibold text-white  easy-in duration-300">Log Out<button>
 
         </div>
       </div>
