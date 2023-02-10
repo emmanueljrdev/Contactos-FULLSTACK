@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Registro</title>
+</head>
+
+<body>
+
+    <div id="container" class="h-screen pt-20 bg-[#1a202c] bg-zinc-50 flex justify-center items-center px-4 gap-8">
+        <form id="form"
+            class="bg-[#1a202c] bg-zinc-100 w-full lg:w-[40%] md:w-[70%] rounded-lg shadow-md p-2 flex flex-col gap-4 p-4">
+
+            <!-- Email input -->
+            <div id="input-email" class="flex flex-col gap-2 text-lg relative">
+                <label for="email-input" class="text-slate-50 text-zinc-700 font-semibold">
+                    E-mail
+                </label>
+
+                <input type="text" id="email-input"
+                    class="border border-slate-600 border-zinc-200 p-2 rounded-md bg-transparent focus:outline-0 focus:ring-2 focus:ring-blue-400 ease-in duration-200 text-zinc-50 text-slate-800 font-semibold w-full">
+                <p class="text-zinc-300 text-sm flex gap-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor" class="w-6 h-6 text-yellow-400">
+                        <path fill-rule="evenodd"
+                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    Ingresa el e-mail registrado</p>
+            </div>
+
+            <!-- Password input -->
+
+
+            <!-- Recuperar contraseña -->
+
+
+            <!-- Button -->
+            <button id="form-btn"
+                class="bg-green-400 bg-green-500 rounded-lg p-2 text-green-50 uppercase font-semibold hover:bg-green-500 hover:bg-green-600 ease-in duration-300">Restablecer
+                contraseña</button>
+            <!-- <img src="../images/undraw_join_re_w1lh.svg" alt="" class="fixed right-0 bottom-0 z-0"> -->
+        </form>
+        <div id="res-div"
+            class="hidden bg-[#1a202c] bg-zinc-100 w-full lg:w-[40%] md:w-[70%] rounded-lg shadow-md p-2 flex flex-col gap-4 p-4">
+            <p class="text-white flex gap-2">Correo enviado exitosamente <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-green-500">
+                    <path fill-rule="evenodd"
+                        d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                        clip-rule="evenodd" />
+                </svg>
+            </p>
+            <p class="text-white flex gap-2">Revisa tu correo para restablecer tu contraseña<svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-6 h-6 text-yellow-400">
+                    <path fill-rule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                        clip-rule="evenodd" />
+                </svg></p>
+
+        </div>
+    </div>
+
+    <script src="/components/nav.js"></script>
+    <script type="module" src="/components/notification.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

@@ -9,7 +9,9 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
   <style>
-    body {font-family: "Poppins", serif;}
+    body {
+      font-family: "Poppins", serif;
+    }
   </style>
 
   <title>Document</title>
@@ -17,81 +19,83 @@
 
 <body class="overflow-auto">
 
-  <div id="container" class="h-screen pt-20 dark:bg-[#1a202c] bg-zinc-50 flex flex-col lg:flex-row justify-center items-center px-4 gap-8">
+  <div id="container"
+    class="h-screen pt-20 bg-[#1a202c] bg-zinc-50 flex flex-col lg:flex-row justify-center items-center px-4 gap-8">
     <form id="form"
-        class="dark:bg-[#1a202c] bg-zinc-100 w-full lg:w-[40%] md:w-[70%] rounded-lg shadow-md p-2 flex flex-col gap-4 p-4">
-        <!-- Name input -->
-        <div id="input-name" class="flex flex-col gap-2 text-lg relative">
-            <label for="name-input" class="dark:text-slate-50 text-zinc-700 font-semibold">
-                Nombre <span class="dark:text-red-400 text-red-500">*</span>
-            </label>
-            <div class="relative">
-                  <input type="text" id="name-input"
-                      class="border dark:border-slate-600 border-zinc-200 p-2 rounded-md bg-transparent focus:outline-0 focus:ring-2 focus:ring-blue-400 ease-in duration-200 dark:text-zinc-50 text-slate-800 font-semibold w-full">
-                  <!-- ICONOS -->
-              <div class="absolute right-1 top-1 bottom-1 px-2 flex justify-center items-center bg-[#1a202c]">
-                  <svg class="w-6 h-6 text-red-500 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                      fill="currentColor">
-                      <path fill-rule="evenodd"
-                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
-                          clip-rule="evenodd" />
-                  </svg>
-                  <svg class="w-6 h-6 text-green-500 hidden" xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24" fill="currentColor">
-                      <path fill-rule="evenodd"
-                          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                          clip-rule="evenodd" />
-                  </svg>
-              </div>
+      class="bg-[#1a202c] bg-zinc-100 w-full lg:w-[40%] md:w-[70%] rounded-lg shadow-md p-2 flex flex-col gap-4 p-4">
+      <!-- Name input -->
+      <div id="input-name" class="flex flex-col gap-2 text-lg relative">
+        <label for="name-input" class="text-slate-50 text-zinc-700 font-semibold">
+          Nombre <span class="text-red-400 text-red-500">*</span>
+        </label>
+        <div class="relative">
+          <input type="text" id="name-input"
+            class="border border-slate-600 border-zinc-200 p-2 rounded-md bg-transparent focus:outline-0 focus:ring-2 focus:ring-blue-400 ease-in duration-200 text-zinc-50 text-slate-800 font-semibold w-full">
+          <!-- ICONOS -->
+          <div class="absolute right-1 top-1 bottom-1 px-2 flex justify-center items-center bg-[#1a202c]">
+            <svg class="w-6 h-6 text-red-500 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                clip-rule="evenodd" />
+            </svg>
+            <svg class="w-6 h-6 text-green-500 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
 
 
 
-            </div>
-
-
-            <p class="dark:text-red-400 text-red-500 font-semibold text-sm hidden">Este espacio es requerido</p>
         </div>
-        <!-- Number input -->
-        <div id="input-number" class="flex flex-col gap-2 text-lg relative">
-            <label for="number-input" class="dark:text-slate-50 text-zinc-700 font-semibold">
-                Número <span class="dark:text-red-400 text-red-500">*</span>
-            </label>
-
-            <div class="relative">
-                <input type="text" id="number-input"
-                    class="border dark:border-slate-600 border-zinc-200 p-2 rounded-md bg-transparent focus:outline-0 focus:ring-2 focus:ring-blue-400 ease-in duration-200 dark:text-zinc-50 text-slate-800 font-semibold w-full">
-                 <!-- ICONOS -->
-                <div class="absolute right-1 top-1 bottom-1 px-2 flex justify-center items-center bg-[#1a202c]">
-                    <svg class="w-6 h-6 text-red-500 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
-                            clip-rule="evenodd" />
-                    </svg>
-                    <svg class="w-6 h-6 text-green-500 hidden" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
 
 
-            </div>
+        <p class="text-red-400 text-red-500 font-semibold text-sm hidden">Este espacio es requerido</p>
+      </div>
+      <!-- Number input -->
+      <div id="input-number" class="flex flex-col gap-2 text-lg relative">
+        <label for="number-input" class="text-slate-50 text-zinc-700 font-semibold">
+          Número <span class="text-red-400 text-red-500">*</span>
+        </label>
 
-            <p class="dark:text-red-400 text-red-500 font-semibold text-sm hidden">El formato del número es: 4XX-XXXXXXX</p>
+        <div class="relative">
+          <input type="text" id="number-input"
+            class="border border-slate-600 border-zinc-200 p-2 rounded-md bg-transparent focus:outline-0 focus:ring-2 focus:ring-blue-400 ease-in duration-200 text-zinc-50 text-slate-800 font-semibold w-full">
+          <!-- ICONOS -->
+          <div class="absolute right-1 top-1 bottom-1 px-2 flex justify-center items-center bg-[#1a202c]">
+            <svg class="w-6 h-6 text-red-500 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zM12 8.25a.75.75 0 01.75.75v3.75a.75.75 0 01-1.5 0V9a.75.75 0 01.75-.75zm0 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                clip-rule="evenodd" />
+            </svg>
+            <svg class="w-6 h-6 text-green-500 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+
+
         </div>
-        
-        <!-- Button -->
-        <button id="form-btn"
-            class="dark:bg-green-400 bg-green-500 rounded-lg p-2 text-green-50 uppercase font-semibold dark:hover:bg-green-500 hover:bg-green-600 ease-in duration-300">Guardar contacto</button>
-        <!-- <img src="../images/undraw_join_re_w1lh.svg" alt="" class="fixed right-0 bottom-0 z-0"> -->
+
+        <p class="text-red-400 text-red-500 font-semibold text-sm hidden">El formato del número es: 4XX-XXXXXXX</p>
+      </div>
+
+      <!-- Button -->
+      <button id="form-btn"
+        class="bg-green-400 bg-green-500 rounded-lg p-2 text-green-50 uppercase font-semibold hover:bg-green-500 hover:bg-green-600 ease-in duration-300">Guardar
+        contacto</button>
+      <!-- <img src="../images/undraw_join_re_w1lh.svg" alt="" class="fixed right-0 bottom-0 z-0"> -->
     </form>
     <!-- Lista -->
     <div class="lg:flex w-[90%] h-[60%] lg:h-[90%] flex flex-col items-center p-4 gap-9">
-        <h1 class="font-bold text-white text-2xl text-center drop-shadow-lg p-2 rounded-md">Contactos Guardados</h1>
-        <ul id="lista" class="w-[95%] grid md:grid-cols-2 gap-8 overflow-auto justify-items-center">
-          <!-- <li class="flex gap-4 items-center justify-center border-2 h-[7rem] w-[15rem] p-2 rounded-md  text-white">
+      <h1 class="font-bold text-white text-2xl text-center drop-shadow-lg p-2 rounded-md">Contactos Guardados</h1>
+      <ul id="lista" class="w-[95%] grid md:grid-cols-2 gap-8 overflow-auto justify-items-center">
+        <!-- <li class="flex gap-4 items-center justify-center border-2 h-[7rem] w-[15rem] p-2 rounded-md  text-white">
             <div class="flex flex-col">
               <textarea id="edit-name" class="bg-transparent text-center" readonly cols="1" rows="2">Emmanuel</textarea>
               <input id="edit-number" minlength="11" maxlength="11" class="bg-transparent text-center w-[7rem]" readonly type="text" value="424-1507257">
@@ -101,19 +105,19 @@
               <button id="edit-btn" class="bg-blue-500 p-1 rounded-md hover:bg-blue-600">Editar</button>
             </span>
           </li> -->
-          
-         
-        </ul>
+
+
+      </ul>
     </div>
-</div>
-<div id="notification" class="fixed z-20 bg-green-400 -top-15 left-[35%] p-6 rounded-md font-bold text-xl ease-in">
-  <p>Soy una notification</p>
-</div>
+  </div>
+  <div id="notification" class="fixed z-20 bg-green-400 -top-15 left-[35%] p-6 rounded-md font-bold text-xl ease-in">
+    <p>Soy una notification</p>
+  </div>
 
 
 
 
-  
+
   <script src="/components/nav.js"></script>
   <script src="index.js"></script>
 </body>

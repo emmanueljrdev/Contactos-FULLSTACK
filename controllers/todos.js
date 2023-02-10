@@ -13,6 +13,8 @@ todosRouter.post('/', async (request, response) => {
   // Extraer del frontend el nombre y el número guardado del contacto.
   const { text, numero } = request.body;
 
+  console.log(text);
+
   // Si el nombre y el numero no son válidos o no existen, envía este error a la consola.
   if (!text && !numero) {
     return response.sendStatus(400).json({ error: 'El texto es requerido' });
@@ -21,7 +23,7 @@ todosRouter.post('/', async (request, response) => {
   // Buscar en la base de datos el nombre y el número para que un mismo usuario no duplique contactos (no funciona).
 
   // const name = await todo.findOne({ text });
-  const number = await todo.findOne({ numero });
+  // const number = await todo.findOne({ numero });
 
 
 
