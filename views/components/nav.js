@@ -1,5 +1,5 @@
 
-const body = document.querySelector('bod
+const body = document.querySelector('body')
 // buscar que pag esta
 // console.log(window.location.pathname);
 
